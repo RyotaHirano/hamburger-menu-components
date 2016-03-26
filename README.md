@@ -1,9 +1,5 @@
 # hamburger-menu-components
 
-```
-npm i hamburger-menu-components
-```
-
 ## License
 
 [MIT][license-url]
