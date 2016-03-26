@@ -1,0 +1,20 @@
+.js-hamburger-button--open {
+  &.burger-rotate-normal {
+    .bar {
+			background: $bar-color-after-hidden;
+      @include transform(rotate(#{$rotate-normal}deg));
+
+			&:before {
+        background: $bar-color-after;
+				@include transform(translateX($bar-height * 0.2) translateY($bar-height * 3.2) rotate(#{$rotate-normal - 45}deg));
+				@include transform-origin(top);
+			}
+
+			&:after {
+        background: $bar-color-after;
+				@include transform(translateX($bar-height * 0.2) translateY($bar-height * -3.0) rotate(#{$rotate-normal + 45}deg));
+				@include transform-origin(bottom);
+			}
+		}
+  }
+}

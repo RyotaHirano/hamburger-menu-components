@@ -1,0 +1,19 @@
+{
+  "use": [
+    "autoprefixer",
+    "css-mqpacker",
+    "postcss-flexbugs-fixes",
+    "postcss-partial-import"
+  ],
+  "autoprefixer": {
+    "browsers": [
+      "ie >= 9",
+      "ie_mob >= 10",
+      "ff >= 40",
+      "Chrome >= 44",
+      "ios_saf >= 7",
+      "opera >= 30",
+      "Android >= 4.1"
+    ]
+  }
+}
