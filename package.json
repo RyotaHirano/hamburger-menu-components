@@ -16,7 +16,7 @@
     "eslint": "eslint src/js",
     "babel": "babel -d lib src/js",
     "build": "npm run rm:css && mkdir css && npm run scss && npm run postcss && npm run eslint && npm run rm:lib && npm run babel",
-    "deploy": "npm run build && gh-pages-deploy-cmd 'demo/public/*'"
+    "deploy": "npm run build && gh-pages-deploy-cmd 'demo/public/**'"
   },
   "main": "index.js",
   "files": [
