@@ -18,6 +18,8 @@ gulp.task('build', cb => {
   runSequence(
     'clean',
     ['jade', 'sass'],
+    'copy:cssDir',
+    'copy:css',
     'copy:build',
     cb
   );

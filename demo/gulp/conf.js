@@ -77,16 +77,24 @@ export const imagemin = {
 };
 
 export const copy = {
-  img: {
-    src: [`${DIR.SRC}/${DIR.IMG}/**`],
-    dst: `${DIR.DST}${DIR.PATH}${DIR.IMG}`
+  cssDir: {
+    src: [
+      `${DIR.CSS}/`
+    ],
+    dst: `${DIR.BUILD}${DIR.PATH}`
+  },
+  css: {
+    src: [
+      `${DIR.CSS}/**`
+    ],
+    dst: `${DIR.BUILD}${DIR.PATH}${DIR.CSS}`
   },
   build: {
     src: [
       `${DIR.DST}/**`,
       `!${DIR.DST}/js/**`,
-      `!${DIR.DST}/${DIR.IMG}`,
-      `!${DIR.DST}/${DIR.IMG}/**`
+      `!${DIR.DST}/${DIR.CSS}`,
+      `!${DIR.DST}/${DIR.CSS}/**`
     ],
     dst: `${DIR.BUILD}${DIR.PATH}`
   }
