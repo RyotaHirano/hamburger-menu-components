@@ -8,6 +8,7 @@ npm i hamburger-menu-components
 
 ## Usage
 
+### javascript
 ```js
 import HamburgerMenuComponents from 'hamburger-menu-components';
 
@@ -15,10 +16,12 @@ const hamburgerMenu = new HamburgerMenuComponents({ target: '.js-hamburger-butto
 hamburgerMenu.bindClick();
 ```
 
+### scss
 ```scss
 @import '../../node_modules/hamburger-menu-components/css/hamburger-menu-components';
 ```
 
+### html
 ```html
 <!-- rotate -->
 <div class="hamburger-button burger-rotate-normal js-hamburger-button">
