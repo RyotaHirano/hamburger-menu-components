@@ -9,7 +9,7 @@ cache:
   directories:
   - node_modules
 after_success:
-- npm run deploy
+- npm run build
 env:
   global:
   - secure: aRkunmtTpQ7G/jSv0laNjpzlABFwW1D+dTVghCmowKnH/7//IwkUKyzHVcuOA/KZOVQ2xc7k8c3IyK2ndMneLi7KEDwaGPTQu8pPLMuptOZ3P6EruOdpbvd1nLOqOpMSx0wYmKTJ8+C7YmHxWv0PJwMw+XqRuSqVjzJ8hV+hl+7tR+cVEd8NN2iQhMrvCEypefWtivCM03NAZsiafMQZ7UOxHGIpdQs75BRTPHhs/uP6hIbQ9vpp+orZMLydALikuSugv9bGFOp7cdWgTr/EUhygvSrEDx+6TCedQUSlTCo3mfrMTTqzAt/TQS3oUKNlDlxtJ93nNMlVXFCJ2iGcZl4VqHrgzQziawAkGLKweNEXAxlWbfg9paV2TGiBToHXihhACRANHx8cPpJ2aNMnZssRbQ4P5+7xophMaPtUM2I5z9lnArNJKXNnUUN1NAezcUb/hMmD3AkfwdPbG6eV1vCCysh3Lcm3fg1qnh9P2bl0FLk+b5gpjJdnu3EuR4B/gdyGumeaJrkdg4OigB7W/ukwZTZ/B5FoD/lGIDSb4pDQwfrzCRcVW31EnRAFA9UbSxcUaKl2BaVbQP61DrBe/qETnVRFBpl8Y+B5HpuqXv63oYEhVXgQEzbtHKgNZ/dt/y356Kl9ppVBrgZLE8WXOubxHPNuoBPd5BM4uhdWqmo=
