@@ -1,6 +1,8 @@
 # hamburger-menu-components
 
 [![Build Status][travis-image]][travis-url]
+[![License][license-image]][license-url]
+[![npm version][npm-image]][npm-url]
 
 ```
 npm i hamburger-menu-components
@@ -57,4 +59,7 @@ hamburgerMenu.bindClick();
 
 [travis-image]: https://travis-ci.org/RyotaHirano/hamburger-menu-components.svg?branch=master
 [travis-url]: https://travis-ci.org/RyotaHirano/hamburger-menu-components
+[npm-url]: https://badge.fury.io/js/hamburger-menu-components
+[npm-image]: https://badge.fury.io/js/hamburger-menu-components.svg
 [license-url]: http://ryotahirano.mit-license.org
+[license-image]: http://img.shields.io/:license-mit-blue.svg
