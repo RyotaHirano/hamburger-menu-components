@@ -51,7 +51,7 @@
 //
 // KeyFrame Animation
 //
-@mixin my-key-frame($animation-name) {
+@mixin myKeyFrame($animation-name) {
   @-webkit-keyframes #{$animation-name} {
     @content;
   }
@@ -59,7 +59,7 @@
     @content;
   }
 }
-@mixin my-animation($animation-name) {
+@mixin myAnimation($animation-name) {
   -webkit-animation: $animation-name;
   animation: $animation-name;
 }

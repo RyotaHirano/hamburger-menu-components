@@ -1,5 +1,5 @@
-import classList from 'classlist';
-const CLASS = 'js-hamburger-button--open';
+const CLASS_OPEN = 'js-hamburger-button--open';
+const CLASS_CLOSE = 'js-hamburger-button--close';
 
 export default class HamburgerButton {
   constructor(opts) {
@@ -9,7 +9,6 @@ export default class HamburgerButton {
       ...opts
     };
     this.el = document.querySelector(option.target);
-    this.targetEl = classList(this.el);
   }
 
   bindClick() {
@@ -18,6 +17,13 @@ export default class HamburgerButton {
 
   _handleClick(e) {
     e.preventDefault();
-    this.targetEl.toggle(CLASS);
+    const regex = /js-hamburger-button--open/;
+    if(regex.test(this.el.className) === true) {
+      this.el.classList.remove(CLASS_OPEN);
+      this.el.classList.add(CLASS_CLOSE);
+    } else {
+      this.el.classList.remove(CLASS_CLOSE);
+      this.el.classList.add(CLASS_OPEN);
+    }
   }
 }

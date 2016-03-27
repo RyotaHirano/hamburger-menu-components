@@ -18,10 +18,11 @@ $burger-height: ($bar-bottom-top * 2) + $bar-height;
 // Transition
 //
 $transition-time-normal: .4s !default;
+$transition-time-short: .2s !default;
 $transition-easing: ease-in-out !default;
 
 //
 // Animation
 //
 $rotate-normal: 180;
-$ddd: 10;
+$rotate-long: 270;
