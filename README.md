@@ -27,31 +27,26 @@ hamburgerMenu.bindClick();
 <div class="hamburger-button burger-rotate-normal js-hamburger-button">
   <div class="bar"></div>
 </div>
-<!--  -->
 
 <!-- fade out -->
 <div class="hamburger-button burger-fadeout js-hamburger-button">
   <div class="bar"></div>
 </div>
-<!--  -->
 
 <!-- fade out delay -->
 <div class="hamburger-button burger-fadeout--delay js-hamburger-button">
   <div class="bar"></div>
 </div>
-<!--  -->
 
 <!-- join -->
 <div class="hamburger-button burger-join js-hamburger-button">
   <div class="bar"></div>
 </div>
-<!--  -->
 
 <!-- join funny -->
 <div class="hamburger-button burger-join--funny js-hamburger-button">
   <div class="bar"></div>
 </div>
-<!--  -->
 ```
 
 ## License
