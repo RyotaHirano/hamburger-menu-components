@@ -2,17 +2,12 @@
   "name": "hamburger-menu-components-demo-page",
   "version": "0.0.0",
   "description": "Hamburger Menu Components Demo Page.",
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
+  "private": "true",
   "author": "RyotaHirano",
-  "main": "index.js",
   "scripts": {
     "start": "gulp",
     "build": "NODE_ENV=production gulp build"
   },
-  "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.3.3",
     "babel-core": "^6.4.0",
