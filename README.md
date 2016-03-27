@@ -1,8 +1,8 @@
 # hamburger-menu-components
 
 [![Build Status][travis-image]][travis-url]
-[![License][license-image]][license-url]
 [![npm version][npm-image]][npm-url]
+[![License][license-image]][license-url]
 
 ```
 npm i hamburger-menu-components
