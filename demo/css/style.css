@@ -1,0 +1,847 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+  font-family: "Noto Sans", Helvetica, Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  height: 180px;
+  background-color: #ffc107;
+  display: table;
+  border-radius: 140px 140px 0 0;
+}
+
+.header .header-title {
+  padding-left: 30px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.sub-header {
+  width: 100%;
+  height: 60px;
+  display: table;
+}
+
+.sub-header--rotate {
+  background-color: #dd2c00;
+}
+
+.sub-header--fadeout {
+  background-color: #81d100;
+}
+
+.sub-header--join {
+  background-color: #d16a00;
+}
+
+.sub-header .h2 {
+  height: 100%;
+  padding-left: 50px;
+  display: table-cell;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+}
+
+.container .case {
+  width: 50%;
+  height: 120px;
+  position: relative;
+  display: inline-block;
+  background-color: #e8eaf6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container .case > * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -13.5px;
+  margin-left: -20px;
+}
+
+.footer {
+  width: 100%;
+  height: 140px;
+  background-color: #ffc107;
+  display: table;
+  border-radius: 0 0 120px 120px;
+}
+
+.hamburger-button {
+  width: 40px;
+  height: 27px;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.hamburger-button .bar {
+  position: absolute;
+  top: 50%;
+  margin-top: -2.5px;
+  width: 40px;
+  height: 5px;
+  background-color: #43a047;
+  border-radius: 20px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+.hamburger-button .bar:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: -11px;
+  width: 40px;
+  height: 5px;
+  background-color: #43a047;
+  border-radius: 20px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+.hamburger-button .bar:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 11px;
+  width: 40px;
+  height: 5px;
+  background-color: #43a047;
+  border-radius: 20px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes joinMenuBarTop {
+  0% {
+  }
+  30% {
+    -ms-transform: translateY(12.1px);
+    -webkit-transform: translateY(12.1px);
+    transform: translateY(12.1px);
+  }
+  60% {
+    -ms-transform: translateY(12.1px);
+    -webkit-transform: translateY(12.1px);
+    transform: translateY(12.1px);
+  }
+  100% {
+    -ms-transform: translateY(12.1px) rotate(45deg);
+    -webkit-transform: translateY(12.1px) rotate(45deg);
+    transform: translateY(12.1px) rotate(45deg);
+  }
+}
+
+@keyframes joinMenuBarTop {
+  0% {
+  }
+  30% {
+    -ms-transform: translateY(12.1px);
+    -webkit-transform: translateY(12.1px);
+    transform: translateY(12.1px);
+  }
+  60% {
+    -ms-transform: translateY(12.1px);
+    -webkit-transform: translateY(12.1px);
+    transform: translateY(12.1px);
+  }
+  100% {
+    -ms-transform: translateY(12.1px) rotate(45deg);
+    -webkit-transform: translateY(12.1px) rotate(45deg);
+    transform: translateY(12.1px) rotate(45deg);
+  }
+}
+
+@-webkit-keyframes joinMenuBarBottom {
+  0% {
+  }
+  30% {
+    -ms-transform: translateY(-11px);
+    -webkit-transform: translateY(-11px);
+    transform: translateY(-11px);
+  }
+  60% {
+    -ms-transform: translateY(-11px);
+    -webkit-transform: translateY(-11px);
+    transform: translateY(-11px);
+  }
+  100% {
+    -ms-transform: translateY(-11px) rotate(-45deg);
+    -webkit-transform: translateY(-11px) rotate(-45deg);
+    transform: translateY(-11px) rotate(-45deg);
+  }
+}
+
+@keyframes joinMenuBarBottom {
+  0% {
+  }
+  30% {
+    -ms-transform: translateY(-11px);
+    -webkit-transform: translateY(-11px);
+    transform: translateY(-11px);
+  }
+  60% {
+    -ms-transform: translateY(-11px);
+    -webkit-transform: translateY(-11px);
+    transform: translateY(-11px);
+  }
+  100% {
+    -ms-transform: translateY(-11px) rotate(-45deg);
+    -webkit-transform: translateY(-11px) rotate(-45deg);
+    transform: translateY(-11px) rotate(-45deg);
+  }
+}
+
+@-webkit-keyframes joinMenuBarCloseTop {
+  0% {
+    -ms-transform: translateY(12.1px) rotate(45deg);
+    -webkit-transform: translateY(12.1px) rotate(45deg);
+    transform: translateY(12.1px) rotate(45deg);
+  }
+  30% {
+    -ms-transform: translateY(12.1px) rotate(0deg);
+    -webkit-transform: translateY(12.1px) rotate(0deg);
+    transform: translateY(12.1px) rotate(0deg);
+  }
+  60% {
+    -ms-transform: translateY(12.1px) rotate(0deg);
+    -webkit-transform: translateY(12.1px) rotate(0deg);
+    transform: translateY(12.1px) rotate(0deg);
+  }
+  100% {
+    -ms-transform: translateY(0) rotate(0deg);
+    -webkit-transform: translateY(0) rotate(0deg);
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+@keyframes joinMenuBarCloseTop {
+  0% {
+    -ms-transform: translateY(12.1px) rotate(45deg);
+    -webkit-transform: translateY(12.1px) rotate(45deg);
+    transform: translateY(12.1px) rotate(45deg);
+  }
+  30% {
+    -ms-transform: translateY(12.1px) rotate(0deg);
+    -webkit-transform: translateY(12.1px) rotate(0deg);
+    transform: translateY(12.1px) rotate(0deg);
+  }
+  60% {
+    -ms-transform: translateY(12.1px) rotate(0deg);
+    -webkit-transform: translateY(12.1px) rotate(0deg);
+    transform: translateY(12.1px) rotate(0deg);
+  }
+  100% {
+    -ms-transform: translateY(0) rotate(0deg);
+    -webkit-transform: translateY(0) rotate(0deg);
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+@-webkit-keyframes joinMenuBarCloseBottom {
+  0% {
+    -ms-transform: translateY(-11px) rotate(-45deg);
+    -webkit-transform: translateY(-11px) rotate(-45deg);
+    transform: translateY(-11px) rotate(-45deg);
+  }
+  30% {
+    -ms-transform: translateY(-11px) rotate(0deg);
+    -webkit-transform: translateY(-11px) rotate(0deg);
+    transform: translateY(-11px) rotate(0deg);
+  }
+  60% {
+    -ms-transform: translateY(-11px) rotate(0deg);
+    -webkit-transform: translateY(-11px) rotate(0deg);
+    transform: translateY(-11px) rotate(0deg);
+  }
+  100% {
+    -ms-transform: translateY(0) rotate(0deg);
+    -webkit-transform: translateY(0) rotate(0deg);
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+@keyframes joinMenuBarCloseBottom {
+  0% {
+    -ms-transform: translateY(-11px) rotate(-45deg);
+    -webkit-transform: translateY(-11px) rotate(-45deg);
+    transform: translateY(-11px) rotate(-45deg);
+  }
+  30% {
+    -ms-transform: translateY(-11px) rotate(0deg);
+    -webkit-transform: translateY(-11px) rotate(0deg);
+    transform: translateY(-11px) rotate(0deg);
+  }
+  60% {
+    -ms-transform: translateY(-11px) rotate(0deg);
+    -webkit-transform: translateY(-11px) rotate(0deg);
+    transform: translateY(-11px) rotate(0deg);
+  }
+  100% {
+    -ms-transform: translateY(0) rotate(0deg);
+    -webkit-transform: translateY(0) rotate(0deg);
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+@-webkit-keyframes joinMenuFunnyBarTop {
+  0% {
+    -ms-transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  40% {
+    -ms-transform: translateY(-5.5px);
+    -webkit-transform: translateY(-5.5px);
+    transform: translateY(-5.5px);
+  }
+  60% {
+    -ms-transform: translateY(12.22222px);
+    -webkit-transform: translateY(12.22222px);
+    transform: translateY(12.22222px);
+  }
+  70% {
+    -ms-transform: translateY(12.22222px) rotate(50deg);
+    -webkit-transform: translateY(12.22222px) rotate(50deg);
+    transform: translateY(12.22222px) rotate(50deg);
+  }
+  85% {
+    -ms-transform: translateY(12.22222px) rotate(65deg);
+    -webkit-transform: translateY(12.22222px) rotate(65deg);
+    transform: translateY(12.22222px) rotate(65deg);
+  }
+  95% {
+    -ms-transform: translateY(12.22222px) rotate(50deg);
+    -webkit-transform: translateY(12.22222px) rotate(50deg);
+    transform: translateY(12.22222px) rotate(50deg);
+  }
+  100% {
+    -ms-transform: translateY(12.22222px) rotate(45deg);
+    -webkit-transform: translateY(12.22222px) rotate(45deg);
+    transform: translateY(12.22222px) rotate(45deg);
+  }
+}
+
+@keyframes joinMenuFunnyBarTop {
+  0% {
+    -ms-transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  40% {
+    -ms-transform: translateY(-5.5px);
+    -webkit-transform: translateY(-5.5px);
+    transform: translateY(-5.5px);
+  }
+  60% {
+    -ms-transform: translateY(12.22222px);
+    -webkit-transform: translateY(12.22222px);
+    transform: translateY(12.22222px);
+  }
+  70% {
+    -ms-transform: translateY(12.22222px) rotate(50deg);
+    -webkit-transform: translateY(12.22222px) rotate(50deg);
+    transform: translateY(12.22222px) rotate(50deg);
+  }
+  85% {
+    -ms-transform: translateY(12.22222px) rotate(65deg);
+    -webkit-transform: translateY(12.22222px) rotate(65deg);
+    transform: translateY(12.22222px) rotate(65deg);
+  }
+  95% {
+    -ms-transform: translateY(12.22222px) rotate(50deg);
+    -webkit-transform: translateY(12.22222px) rotate(50deg);
+    transform: translateY(12.22222px) rotate(50deg);
+  }
+  100% {
+    -ms-transform: translateY(12.22222px) rotate(45deg);
+    -webkit-transform: translateY(12.22222px) rotate(45deg);
+    transform: translateY(12.22222px) rotate(45deg);
+  }
+}
+
+@-webkit-keyframes joinMenuFunnyBarBottom {
+  0% {
+    -ms-transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  40% {
+    -ms-transform: translateY(5.5px);
+    -webkit-transform: translateY(5.5px);
+    transform: translateY(5.5px);
+  }
+  60% {
+    -ms-transform: translateY(-12.22222px);
+    -webkit-transform: translateY(-12.22222px);
+    transform: translateY(-12.22222px);
+  }
+  70% {
+    -ms-transform: translateY(-12.22222px) rotate(-50deg);
+    -webkit-transform: translateY(-12.22222px) rotate(-50deg);
+    transform: translateY(-12.22222px) rotate(-50deg);
+  }
+  85% {
+    -ms-transform: translateY(-12.22222px) rotate(-65deg);
+    -webkit-transform: translateY(-12.22222px) rotate(-65deg);
+    transform: translateY(-12.22222px) rotate(-65deg);
+  }
+  95% {
+    -ms-transform: translateY(-12.22222px) rotate(-50deg);
+    -webkit-transform: translateY(-12.22222px) rotate(-50deg);
+    transform: translateY(-12.22222px) rotate(-50deg);
+  }
+  100% {
+    -ms-transform: translateY(-12.22222px) rotate(-45deg);
+    -webkit-transform: translateY(-12.22222px) rotate(-45deg);
+    transform: translateY(-12.22222px) rotate(-45deg);
+  }
+}
+
+@keyframes joinMenuFunnyBarBottom {
+  0% {
+    -ms-transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  40% {
+    -ms-transform: translateY(5.5px);
+    -webkit-transform: translateY(5.5px);
+    transform: translateY(5.5px);
+  }
+  60% {
+    -ms-transform: translateY(-12.22222px);
+    -webkit-transform: translateY(-12.22222px);
+    transform: translateY(-12.22222px);
+  }
+  70% {
+    -ms-transform: translateY(-12.22222px) rotate(-50deg);
+    -webkit-transform: translateY(-12.22222px) rotate(-50deg);
+    transform: translateY(-12.22222px) rotate(-50deg);
+  }
+  85% {
+    -ms-transform: translateY(-12.22222px) rotate(-65deg);
+    -webkit-transform: translateY(-12.22222px) rotate(-65deg);
+    transform: translateY(-12.22222px) rotate(-65deg);
+  }
+  95% {
+    -ms-transform: translateY(-12.22222px) rotate(-50deg);
+    -webkit-transform: translateY(-12.22222px) rotate(-50deg);
+    transform: translateY(-12.22222px) rotate(-50deg);
+  }
+  100% {
+    -ms-transform: translateY(-12.22222px) rotate(-45deg);
+    -webkit-transform: translateY(-12.22222px) rotate(-45deg);
+    transform: translateY(-12.22222px) rotate(-45deg);
+  }
+}
+
+@-webkit-keyframes joinMenuFunnyBarCloseTop {
+  0% {
+    -ms-transform: translateY(12.22222px) rotate(45deg);
+    -webkit-transform: translateY(12.22222px) rotate(45deg);
+    transform: translateY(12.22222px) rotate(45deg);
+  }
+  1.20% {
+    -ms-transform: translateY(12.22222px) rotate(55deg);
+    -webkit-transform: translateY(12.22222px) rotate(55deg);
+    transform: translateY(12.22222px) rotate(55deg);
+  }
+  40% {
+    -ms-transform: translateY(12.22222px) rotate(65deg);
+    -webkit-transform: translateY(12.22222px) rotate(65deg);
+    transform: translateY(12.22222px) rotate(65deg);
+  }
+  50% {
+    -ms-transform: translateY(12.22222px) rotate(55deg);
+    -webkit-transform: translateY(12.22222px) rotate(55deg);
+    transform: translateY(12.22222px) rotate(55deg);
+  }
+  60% {
+    -ms-transform: translateY(12.22222px) rotate(0deg);
+    -webkit-transform: translateY(12.22222px) rotate(0deg);
+    transform: translateY(12.22222px) rotate(0deg);
+  }
+  70% {
+    -ms-transform: translateY(-4.4px) rotate(0deg);
+    -webkit-transform: translateY(-4.4px) rotate(0deg);
+    transform: translateY(-4.4px) rotate(0deg);
+  }
+  90% {
+    -ms-transform: translateY(-1.1px) rotate(0deg);
+    -webkit-transform: translateY(-1.1px) rotate(0deg);
+    transform: translateY(-1.1px) rotate(0deg);
+  }
+  100% {
+    -ms-transform: translateY(0px) rotate(0deg);
+    -webkit-transform: translateY(0px) rotate(0deg);
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+@keyframes joinMenuFunnyBarCloseTop {
+  0% {
+    -ms-transform: translateY(12.22222px) rotate(45deg);
+    -webkit-transform: translateY(12.22222px) rotate(45deg);
+    transform: translateY(12.22222px) rotate(45deg);
+  }
+  1.20% {
+    -ms-transform: translateY(12.22222px) rotate(55deg);
+    -webkit-transform: translateY(12.22222px) rotate(55deg);
+    transform: translateY(12.22222px) rotate(55deg);
+  }
+  40% {
+    -ms-transform: translateY(12.22222px) rotate(65deg);
+    -webkit-transform: translateY(12.22222px) rotate(65deg);
+    transform: translateY(12.22222px) rotate(65deg);
+  }
+  50% {
+    -ms-transform: translateY(12.22222px) rotate(55deg);
+    -webkit-transform: translateY(12.22222px) rotate(55deg);
+    transform: translateY(12.22222px) rotate(55deg);
+  }
+  60% {
+    -ms-transform: translateY(12.22222px) rotate(0deg);
+    -webkit-transform: translateY(12.22222px) rotate(0deg);
+    transform: translateY(12.22222px) rotate(0deg);
+  }
+  70% {
+    -ms-transform: translateY(-4.4px) rotate(0deg);
+    -webkit-transform: translateY(-4.4px) rotate(0deg);
+    transform: translateY(-4.4px) rotate(0deg);
+  }
+  90% {
+    -ms-transform: translateY(-1.1px) rotate(0deg);
+    -webkit-transform: translateY(-1.1px) rotate(0deg);
+    transform: translateY(-1.1px) rotate(0deg);
+  }
+  100% {
+    -ms-transform: translateY(0px) rotate(0deg);
+    -webkit-transform: translateY(0px) rotate(0deg);
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+@-webkit-keyframes joinMenuFunnyBarCloseBottom {
+  0% {
+    -ms-transform: translateY(-12.22222px) rotate(-45deg);
+    -webkit-transform: translateY(-12.22222px) rotate(-45deg);
+    transform: translateY(-12.22222px) rotate(-45deg);
+  }
+  1.20% {
+    -ms-transform: translateY(-12.22222px) rotate(-55deg);
+    -webkit-transform: translateY(-12.22222px) rotate(-55deg);
+    transform: translateY(-12.22222px) rotate(-55deg);
+  }
+  40% {
+    -ms-transform: translateY(-12.22222px) rotate(-65deg);
+    -webkit-transform: translateY(-12.22222px) rotate(-65deg);
+    transform: translateY(-12.22222px) rotate(-65deg);
+  }
+  50% {
+    -ms-transform: translateY(-12.22222px) rotate(-55deg);
+    -webkit-transform: translateY(-12.22222px) rotate(-55deg);
+    transform: translateY(-12.22222px) rotate(-55deg);
+  }
+  60% {
+    -ms-transform: translateY(-12.22222px) rotate(0deg);
+    -webkit-transform: translateY(-12.22222px) rotate(0deg);
+    transform: translateY(-12.22222px) rotate(0deg);
+  }
+  70% {
+    -ms-transform: translateY(4.4px) rotate(0deg);
+    -webkit-transform: translateY(4.4px) rotate(0deg);
+    transform: translateY(4.4px) rotate(0deg);
+  }
+  90% {
+    -ms-transform: translateY(1.1px) rotate(0deg);
+    -webkit-transform: translateY(1.1px) rotate(0deg);
+    transform: translateY(1.1px) rotate(0deg);
+  }
+  100% {
+    -ms-transform: translateY(0px) rotate(0deg);
+    -webkit-transform: translateY(0px) rotate(0deg);
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+@keyframes joinMenuFunnyBarCloseBottom {
+  0% {
+    -ms-transform: translateY(-12.22222px) rotate(-45deg);
+    -webkit-transform: translateY(-12.22222px) rotate(-45deg);
+    transform: translateY(-12.22222px) rotate(-45deg);
+  }
+  1.20% {
+    -ms-transform: translateY(-12.22222px) rotate(-55deg);
+    -webkit-transform: translateY(-12.22222px) rotate(-55deg);
+    transform: translateY(-12.22222px) rotate(-55deg);
+  }
+  40% {
+    -ms-transform: translateY(-12.22222px) rotate(-65deg);
+    -webkit-transform: translateY(-12.22222px) rotate(-65deg);
+    transform: translateY(-12.22222px) rotate(-65deg);
+  }
+  50% {
+    -ms-transform: translateY(-12.22222px) rotate(-55deg);
+    -webkit-transform: translateY(-12.22222px) rotate(-55deg);
+    transform: translateY(-12.22222px) rotate(-55deg);
+  }
+  60% {
+    -ms-transform: translateY(-12.22222px) rotate(0deg);
+    -webkit-transform: translateY(-12.22222px) rotate(0deg);
+    transform: translateY(-12.22222px) rotate(0deg);
+  }
+  70% {
+    -ms-transform: translateY(4.4px) rotate(0deg);
+    -webkit-transform: translateY(4.4px) rotate(0deg);
+    transform: translateY(4.4px) rotate(0deg);
+  }
+  90% {
+    -ms-transform: translateY(1.1px) rotate(0deg);
+    -webkit-transform: translateY(1.1px) rotate(0deg);
+    transform: translateY(1.1px) rotate(0deg);
+  }
+  100% {
+    -ms-transform: translateY(0px) rotate(0deg);
+    -webkit-transform: translateY(0px) rotate(0deg);
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+.hamburger-button.burger-join .bar {
+  -webkit-transition-property: all, opacity, background-color;
+  transition-property: all, opacity, background-color;
+  -webkit-transition-delay: 0.4s, 0.2s, 0.1s;
+  transition-delay: 0.4s, 0.2s, 0.1s;
+}
+
+.hamburger-button.burger-join .bar:before {
+  -ms-transform-origin: center top;
+  -webkit-transform-origin: center top;
+  transform-origin: center top;
+}
+
+.hamburger-button.burger-join .bar:after {
+  -ms-transform-origin: center bottom;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+.hamburger-button.burger-join--funny .bar {
+  -webkit-transition-property: all, opacity, background-color;
+  transition-property: all, opacity, background-color;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.hamburger-button.burger-join--funny .bar:before {
+  -ms-transform-origin: center top;
+  -webkit-transform-origin: center top;
+  transform-origin: center top;
+}
+
+.hamburger-button.burger-join--funny .bar:after {
+  -ms-transform-origin: center bottom;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+.js-hamburger-button--open.burger-rotate-normal .bar {
+  background: rgba(229, 57, 53, 0);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.js-hamburger-button--open.burger-rotate-normal .bar:before {
+  background: #e53935;
+  -ms-transform: translateX(1px) translateY(16px) rotate(135deg);
+  -webkit-transform: translateX(1px) translateY(16px) rotate(135deg);
+  transform: translateX(1px) translateY(16px) rotate(135deg);
+  -ms-transform-origin: center top;
+  -webkit-transform-origin: center top;
+  transform-origin: center top;
+}
+
+.js-hamburger-button--open.burger-rotate-normal .bar:after {
+  background: #e53935;
+  -ms-transform: translateX(1px) translateY(-15px) rotate(225deg);
+  -webkit-transform: translateX(1px) translateY(-15px) rotate(225deg);
+  transform: translateX(1px) translateY(-15px) rotate(225deg);
+  -ms-transform-origin: center bottom;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+.js-hamburger-button--open.burger-rotate-long .bar {
+  background: rgba(229, 57, 53, 0);
+  -ms-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.js-hamburger-button--open.burger-rotate-long .bar:before {
+  background: #e53935;
+  -ms-transform: translateX(-2px) translateY(15px) rotate(225deg);
+  -webkit-transform: translateX(-2px) translateY(15px) rotate(225deg);
+  transform: translateX(-2px) translateY(15px) rotate(225deg);
+  -ms-transform-origin: center top;
+  -webkit-transform-origin: center top;
+  transform-origin: center top;
+}
+
+.js-hamburger-button--open.burger-rotate-long .bar:after {
+  background: #e53935;
+  -ms-transform: translateX(1px) translateY(-12px) rotate(315deg);
+  -webkit-transform: translateX(1px) translateY(-12px) rotate(315deg);
+  transform: translateX(1px) translateY(-12px) rotate(315deg);
+  -ms-transform-origin: center bottom;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+.js-hamburger-button--open.burger-fadeout .bar {
+  background: rgba(229, 57, 53, 0);
+}
+
+.js-hamburger-button--open.burger-fadeout .bar:before {
+  background: #e53935;
+  -ms-transform: translateX(1px) translateY(11px) rotate(45deg);
+  -webkit-transform: translateX(1px) translateY(11px) rotate(45deg);
+  transform: translateX(1px) translateY(11px) rotate(45deg);
+  -ms-transform-origin: center top;
+  -webkit-transform-origin: center top;
+  transform-origin: center top;
+}
+
+.js-hamburger-button--open.burger-fadeout .bar:after {
+  background: #e53935;
+  -ms-transform: translateX(2px) translateY(-13px) rotate(-45deg);
+  -webkit-transform: translateX(2px) translateY(-13px) rotate(-45deg);
+  transform: translateX(2px) translateY(-13px) rotate(-45deg);
+  -ms-transform-origin: center bottom;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+.js-hamburger-button--open.burger-fadeout--delay .bar {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  background: rgba(229, 57, 53, 0);
+}
+
+.js-hamburger-button--open.burger-fadeout--delay .bar:before {
+  background: #e53935;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  -ms-transform: translateX(1px) translateY(11px) rotate(45deg);
+  -webkit-transform: translateX(1px) translateY(11px) rotate(45deg);
+  transform: translateX(1px) translateY(11px) rotate(45deg);
+  -ms-transform-origin: center top;
+  -webkit-transform-origin: center top;
+  transform-origin: center top;
+}
+
+.js-hamburger-button--open.burger-fadeout--delay .bar:after {
+  background: #e53935;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  -ms-transform: translateX(2px) translateY(-13px) rotate(-45deg);
+  -webkit-transform: translateX(2px) translateY(-13px) rotate(-45deg);
+  transform: translateX(2px) translateY(-13px) rotate(-45deg);
+  -ms-transform-origin: center bottom;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+.js-hamburger-button--open.burger-join .bar {
+  background: rgba(229, 57, 53, 0);
+  -webkit-transition-delay: 0.4s, 0.2s, 0.1s;
+  transition-delay: 0.4s, 0.2s, 0.1s;
+}
+
+.js-hamburger-button--open.burger-join .bar:before {
+  background: #e53935;
+  -webkit-animation: joinMenuBarTop 0.4s 0.1s linear forwards;
+  animation: joinMenuBarTop 0.4s 0.1s linear forwards;
+}
+
+.js-hamburger-button--open.burger-join .bar:after {
+  background: #e53935;
+  -webkit-animation: joinMenuBarBottom 0.4s 0.1s linear forwards;
+  animation: joinMenuBarBottom 0.4s 0.1s linear forwards;
+}
+
+.js-hamburger-button--open.burger-join--funny .bar {
+  background: rgba(229, 57, 53, 0);
+  -webkit-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-transition-delay: 0.36s;
+  transition-delay: 0.36s;
+}
+
+.js-hamburger-button--open.burger-join--funny .bar:before {
+  background: #e53935;
+  -webkit-animation: joinMenuFunnyBarTop 0.4s 0.1s linear forwards;
+  animation: joinMenuFunnyBarTop 0.4s 0.1s linear forwards;
+}
+
+.js-hamburger-button--open.burger-join--funny .bar:after {
+  background: #e53935;
+  -webkit-animation: joinMenuFunnyBarBottom 0.4s 0.1s linear forwards;
+  animation: joinMenuFunnyBarBottom 0.4s 0.1s linear forwards;
+}
+
+.js-hamburger-button--close.burger-join .bar {
+  background: #43a047;
+}
+
+.js-hamburger-button--close.burger-join .bar:before {
+  -webkit-animation: joinMenuBarCloseTop 0.4s 0.1s linear backwards;
+  animation: joinMenuBarCloseTop 0.4s 0.1s linear backwards;
+}
+
+.js-hamburger-button--close.burger-join .bar:after {
+  -webkit-animation: joinMenuBarCloseBottom 0.4s 0.1s linear backwards;
+  animation: joinMenuBarCloseBottom 0.4s 0.1s linear backwards;
+}
+
+.js-hamburger-button--close.burger-join--funny .bar {
+  background: #43a047;
+}
+
+.js-hamburger-button--close.burger-join--funny .bar:before {
+  -webkit-animation: joinMenuFunnyBarCloseTop 0.4s 0.1s linear backwards;
+  animation: joinMenuFunnyBarCloseTop 0.4s 0.1s linear backwards;
+}
+
+.js-hamburger-button--close.burger-join--funny .bar:after {
+  -webkit-animation: joinMenuFunnyBarCloseBottom 0.4s 0.1s linear backwards;
+  animation: joinMenuFunnyBarCloseBottom 0.4s 0.1s linear backwards;
+}
