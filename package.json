@@ -15,7 +15,8 @@
     "postcss": "postcss --local-plugins -c .postcssrc.json -s postcss-scss -u autoprefixer -d css dst/css/hamburger-menu-components.css",
     "eslint": "eslint src/js",
     "babel": "babel -d lib src/js",
-    "build": "npm run rm:css && mkdir css && npm run scss && npm run postcss && npm run eslint && npm run rm:lib && npm run babel"
+    "build": "npm run rm:css && mkdir css && npm run scss && npm run postcss && npm run eslint && npm run rm:lib && npm run babel",
+    "deploy": "npm run build && gh-pages-deploy-cmd 'demo/dst/**/*'"
   },
   "main": "index.js",
   "files": [

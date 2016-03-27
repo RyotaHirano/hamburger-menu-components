@@ -47,6 +47,6 @@
     "webpack": "^1.12.9"
   },
   "dependencies": {
-    "hamburger-menu-components": "file:../"
+    "hamburger-menu-components": "^0.0.3"
   }
 }
