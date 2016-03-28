@@ -4,11 +4,14 @@
 [![npm version][npm-image]][npm-url]
 [![License][license-image]][license-url]
 
+## DEMO
+http://ryotahirano.github.io/hamburger-menu-components
+
+## Usage
+
 ```
 npm i hamburger-menu-components
 ```
-
-## Usage
 
 ### javascript
 ```js
