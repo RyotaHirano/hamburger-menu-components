@@ -7,6 +7,8 @@
 ## DEMO
 http://ryotahirano.github.io/hamburger-menu-components
 
+---
+
 ## Usage
 
 ```
@@ -53,6 +55,8 @@ hamburgerMenu.bindClick();
   <div class="bar"></div>
 </div>
 ```
+
+---
 
 ## License
 
